@@ -12,15 +12,13 @@ import kotlinx.coroutines.launch
 import me.gabriel.hearthstone.domain.HearthStoneDomainModel
 import me.gabriel.hearthstone.domain.HearthStoneListUseCase
 import me.gabriel.hearthstone.extension.onSuccess
-import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
 class HeathStoneListViewModel @Inject constructor(
     private val hearthStoneUseCase: HearthStoneListUseCase,
-) : ViewModel() {
-
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
+) : ViewModel() {
 
     private val _cardList = MutableLiveData<List<HearthStoneDomainModel>>()
     val cardList: LiveData<List<HearthStoneDomainModel>> = _cardList
@@ -28,9 +26,7 @@ class HeathStoneListViewModel @Inject constructor(
     private suspend fun fetchCardList() {
         hearthStoneUseCase.getCardList()
             .catch {
-                _cardList.postValue(emptyList()).also {
-                    Timber.e("HomeViewModel", "ON CALL ERROR -> $it")
-                }
+                _cardList.postValue(emptyList())
             }.onSuccess {
                 _cardList.postValue(it)
             }

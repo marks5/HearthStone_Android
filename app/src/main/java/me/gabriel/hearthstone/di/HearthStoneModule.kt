@@ -40,6 +40,5 @@ abstract class HearthStoneModule {
     @Binds
     abstract fun bindHearthStoneListUseCase(
         useCase: RealHearthStoneListUseCase
-    ) : HearthStoneListUseCase
-
+    ): HearthStoneListUseCase
 }

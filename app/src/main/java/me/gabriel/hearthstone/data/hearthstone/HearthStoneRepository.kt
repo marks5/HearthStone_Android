@@ -12,7 +12,7 @@ import javax.inject.Singleton
 
 interface HearthStoneRepository {
     suspend fun refreshHearthStoneList()
-    fun returnBiomarkerLocallyListAsFlow(): Flow<List<HearthStoneDomainModel>>
+    fun returnHearthStoneListLocally(): Flow<List<HearthStoneDomainModel>>
 }
 
 @Singleton
@@ -23,12 +23,14 @@ class RealHearthStoneRepository @Inject constructor(
 
     override suspend fun refreshHearthStoneList() {
         biomarkerRemoteDataSource.returnBiomarkersList().mapNotNull { each ->
-                each.value.map { it.mapperToDatabaseEntity() }.toTypedArray()
-                    .let { biomarkerLocalDataSource.insertBiomarker(*it) }
-            }
+            each.value.map { it.mapperToDatabaseEntity() }.toTypedArray()
+                .let {
+                    biomarkerLocalDataSource.insertBiomarker(*it)
+                }
+        }
     }
 
-    override fun returnBiomarkerLocallyListAsFlow() =
-        biomarkerLocalDataSource.returnBiomarkersListAsFlow()
+    override fun returnHearthStoneListLocally() =
+        biomarkerLocalDataSource.returnListAsFlow()
             .map { it.map { it.mapperToDomainModel() } }.flowOn(Dispatchers.IO)
 }
