@@ -23,6 +23,9 @@ class HeathStoneListViewModel @Inject constructor(
     private val _cardList = MutableLiveData<List<HearthStoneDomainModel>>()
     val cardList: LiveData<List<HearthStoneDomainModel>> = _cardList
 
+    private val _error = MutableLiveData<Boolean>()
+    val error: LiveData<Boolean> = _error
+
     private suspend fun fetchCardList() {
         hearthStoneUseCase.getCardList()
             .catch {

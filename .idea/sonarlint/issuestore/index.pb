@@ -18,18 +18,12 @@ A
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
 F
 app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
-P
- app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 z
 Japp/src/androidTest/java/me/gabriel/hearthstone/ExampleInstrumentedTest.kt,d/3/d353eca5a89a1ba0dc5cf944c0c55bf4b8e33a76
 s
 Capp/src/main/java/me/gabriel/hearthstone/extension/FlowExtension.kt,b/4/b4c7a1ba3831923d95c9232e2114b71e243e1b15
 u
 Eapp/src/main/java/me/gabriel/hearthstone/extension/StringExtension.kt,f/e/fef3d789e69d60e2f72de59c79577289ab2908d5
-s
-Capp/src/main/java/me/gabriel/hearthstone/extension/ViewExtension.kt,0/a/0abb8e3dd4bd474a634e5d0fcd1c05aa5f6d643d
-v
-Fapp/src/main/java/me/gabriel/hearthstone/data/HearthStoneApiService.kt,3/7/3772ebe56e5a50c8ea27ed78ebeb4515c570b131
 à
 Xapp/src/main/java/me/gabriel/hearthstone/data/hearthstone/source/local/HearthStoneDao.kt,2/7/27627673c25cad3fcac8c981f0043cacb927d198
 ç
@@ -40,15 +34,9 @@ i
 9app/src/main/java/me/gabriel/hearthstone/di/RoomModule.kt,8/0/80a254bf73ba43fb17b708876a18176a9cc365c9
 è
 _app/src/main/java/me/gabriel/hearthstone/presentation/adapter/HearthStoneRecyclerViewAdapter.kt,f/e/fe4f74561f58b6173e5f773d520b95e65d951e26
-ñ
-fapp/src/main/java/me/gabriel/hearthstone/data/hearthstone/source/remote/HearthStoneRemoteDataSource.kt,9/5/95ffe2f87c6790b01fabc497188e9057e28e66da
 ã
 [app/src/main/java/me/gabriel/hearthstone/data/hearthstone/entity/HearthStoneRemoteEntity.kt,0/7/07bcc4a657cf68f05a92e1d7b4be51a654c8e433
-x
-Happ/src/main/java/me/gabriel/hearthstone/data/HearthStoneRoomDatabase.kt,c/c/ccabfee75f62118613803144fbab2c6e471f264b
 Ü
 Vapp/src/main/java/me/gabriel/hearthstone/presentation/adapter/HearthStoneViewHolder.kt,f/3/f3738352f1067b4ffd7601495ea74c464e080d20
 q
 Aapp/src/main/java/me/gabriel/hearthstone/HeathStoneApplication.kt,7/5/7518003079f33bbb7ce01c1aa11ec46bc14ce22d
-Ä
-Papp/src/main/java/me/gabriel/hearthstone/presentation/fragment/DetailFragment.kt,f/a/fa7c109d2af5bf15c40011c297229655a262a3f7

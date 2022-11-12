@@ -23,14 +23,17 @@ class RealHearthStoneRepository @Inject constructor(
 
     override suspend fun refreshHearthStoneList() {
         biomarkerRemoteDataSource.returnBiomarkersList().mapNotNull { each ->
-            each.value.map { it.mapperToDatabaseEntity() }.toTypedArray()
-                .let {
-                    biomarkerLocalDataSource.insertBiomarker(*it)
-                }
+            each.value.map {
+                it.mapperToDatabaseEntity()
+            }.toTypedArray().let {
+                biomarkerLocalDataSource.insertBiomarker(*it)
+            }
         }
     }
 
     override fun returnHearthStoneListLocally() =
-        biomarkerLocalDataSource.returnListAsFlow()
-            .map { it.map { it.mapperToDomainModel() } }.flowOn(Dispatchers.IO)
+        biomarkerLocalDataSource.returnListAsFlow().map { it.map { it.mapperToDomainModel() } }
+            .flowOn(Dispatchers.IO)
 }
+
+
