@@ -24,11 +24,7 @@ s
 Capp/src/main/java/me/gabriel/hearthstone/extension/FlowExtension.kt,b/4/b4c7a1ba3831923d95c9232e2114b71e243e1b15
 u
 Eapp/src/main/java/me/gabriel/hearthstone/extension/StringExtension.kt,f/e/fef3d789e69d60e2f72de59c79577289ab2908d5
-ç
-]app/src/main/java/me/gabriel/hearthstone/data/hearthstone/entity/HearthStoneDatabaseEntity.kt,b/1/b198a9f8d63b4b0ed3e056d128e89ed759f603e2
 m
 =app/src/main/java/me/gabriel/hearthstone/di/RetrofitModule.kt,6/9/6994ad19ffb8e6513c659dc4360b3ba00b888d9f
 i
 9app/src/main/java/me/gabriel/hearthstone/di/RoomModule.kt,8/0/80a254bf73ba43fb17b708876a18176a9cc365c9
-ã
-[app/src/main/java/me/gabriel/hearthstone/data/hearthstone/entity/HearthStoneRemoteEntity.kt,0/7/07bcc4a657cf68f05a92e1d7b4be51a654c8e433

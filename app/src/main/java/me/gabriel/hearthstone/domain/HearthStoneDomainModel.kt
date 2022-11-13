@@ -21,7 +21,7 @@ data class HearthStoneDomainModel(
     val health: Int?
 ) : java.io.Serializable
 
-val BiomarkerDomainModelWithData: HearthStoneDomainModel = HearthStoneDomainModel(
+val domainModelWithData: HearthStoneDomainModel = HearthStoneDomainModel(
     cardId = "VAN_CS2_168",
     dbfId = 68395,
     name = "Murloc Raider",
@@ -42,7 +42,7 @@ val BiomarkerDomainModelWithData: HearthStoneDomainModel = HearthStoneDomainMode
     locale = "enUS"
 )
 
-val BiomarkerDomainModelWithoutData: HearthStoneDomainModel = HearthStoneDomainModel(
+val domainModelWithoutModel: HearthStoneDomainModel = HearthStoneDomainModel(
     cardId = "",
     dbfId = 68395,
     name = "",

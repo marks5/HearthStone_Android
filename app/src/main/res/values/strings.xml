@@ -15,4 +15,6 @@
     <string name="card_attack"><b>Ataque:</b> %s \n\n</string>
     <string name="card_cost"><b>Custo:</b> %s \n\n</string>
     <string name="card_helth"><b>Vida:</b> %s</string>
+    <string name="card_head">Card info\n\n</string>
+    <string name="card_default">Sem informação</string>
 </resources>

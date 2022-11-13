@@ -37,9 +37,9 @@ data class HearthStoneRemoteEntity(
         faction = faction ?: empty(),
         race = race ?: empty(),
         rarity = rarity ?: empty(),
-        attack = attack,
-        cost = cost,
+        attack = attack ?: 0,
+        cost = cost ?: 0,
         playerClass = playerClass ?: empty(),
-        health = health
+        health = health ?: 0
     )
 }
