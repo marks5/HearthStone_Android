@@ -18,8 +18,4 @@ Problemas:
   Custo
   Health
 
-A não paginação influencia em alguns problemas grandes arquiteturais: maior quantidade de memória alocada para viewmodel, podendo vir a ser novamente um gargalo de acordo com o aparelho usado
-
-Solução:
-Download desta primeira API durante a primeira inicialização do app em conjunto com uma SplashScreen
-Essa lista será persistida em um datasource usando Room, que filtrará os conteúdos de acordo com os dados esperados para tela de detalhe (limitação do negócio)
+A não paginação e a recorrência de informações influenciam em alguns problemas grandes arquiteturais
