@@ -98,15 +98,15 @@ class ListFragment : Fragment() {
         }
     }
 
-    private fun handleInternetConnection() {
+    private fun handleInternetConnection() = with(binding.loader) {
         if (requireContext().isNetworkAvailable()) {
             viewModel.doFetchCardList().also {
                 showError()
-                binding.loader.loading(true)
+                loading(true)
             }
         } else {
             showError(true)
-            binding.loader.loading()
+            loading()
         }
     }
 

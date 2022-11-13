@@ -14,7 +14,7 @@ interface HearthStoneDao {
     fun insertBiomarker(vararg biomarkerDatabaseEntity: HearthStoneDatabaseEntity)
 
     @Query(
-        "SELECT * FROM hearthstone_table WHERE img not null"
+        "SELECT * FROM hearthstone_table WHERE img not null and img != ''"
     ) fun returnBiomarkersListAsFlow(): Flow<List<HearthStoneDatabaseEntity>>
 
 }

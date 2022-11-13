@@ -3,4 +3,16 @@
     <string name="connection_error">Houve algum erro com sua conexão, verifique e tente novamente</string>
     <string name="error">Houve algum erro…</string>
     <string name="try_again">Tentar novamente</string>
+    <string name="game_card">Game Card</string>
+    <string name="card_artist"><b>Artista:</b> %s \n\n</string>
+    <string name="card_name"><b>Nome:</b> %s \n\n</string>
+    <string name="card_flavor"><b>Descrição "flavor":</b> %s \n\n</string>
+    <string name="card_short"><b>Descrição curta:</b> %s \n\n</string>
+    <string name="card_set"><b>Set pertencente:</b> %s \n\n</string>
+    <string name="card_type"><b>Tipo:</b> %s \n\n</string>
+    <string name="card_faction"><b>Faction:</b> %s \n\n</string>
+    <string name="card_rarity"><b>Raridade:</b> %s \n\n</string>
+    <string name="card_attack"><b>Ataque:</b> %s \n\n</string>
+    <string name="card_cost"><b>Custo:</b> %s \n\n</string>
+    <string name="card_helth"><b>Vida:</b> %s</string>
 </resources>
