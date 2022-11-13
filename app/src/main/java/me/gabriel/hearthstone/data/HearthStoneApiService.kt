@@ -6,6 +6,6 @@ import retrofit2.http.GET
 interface HearthStoneApiService {
 
     @GET("cards")
-    suspend fun returnBiomarkersList(): Map<String, List<HearthStoneRemoteEntity>>
+    suspend fun returnCardsList(): Map<String, List<HearthStoneRemoteEntity>>
 
 }

@@ -26,6 +26,6 @@ object RoomModule {
     @Singleton
     @Provides
     fun provideBiomarkerDao(biomarkersRoomDatabase: HearthStoneRoomDatabase) =
-        biomarkersRoomDatabase.biomarkerDao()
+        biomarkersRoomDatabase.hearthStoneCardDao()
 
 }

@@ -12,8 +12,6 @@ interface HearthStoneListUseCase {
 class RealHearthStoneListUseCase @Inject constructor(
     private val repository: HearthStoneRepository
 ) : HearthStoneListUseCase {
-    override fun getCardList() =
-        repository.returnBiomarkerLocallyListAsFlow()
-
+    override fun getCardList() = repository.returnHearthStoneListLocally()
     override suspend fun refreshCardList() = repository.refreshHearthStoneList()
 }

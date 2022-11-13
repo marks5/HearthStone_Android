@@ -11,10 +11,10 @@ import me.gabriel.hearthstone.data.hearthstone.entity.HearthStoneDatabaseEntity
 interface HearthStoneDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertBiomarker(vararg biomarkerDatabaseEntity: HearthStoneDatabaseEntity)
+    fun insertCard(vararg biomarkerDatabaseEntity: HearthStoneDatabaseEntity)
 
     @Query(
-        "SELECT * FROM hearthstone_table WHERE img not null"
-    ) fun returnBiomarkersListAsFlow(): Flow<List<HearthStoneDatabaseEntity>>
+        "SELECT * FROM hearthstone_table WHERE img not null and img != ''"
+    ) fun returnCardsListAsFlow(): Flow<List<HearthStoneDatabaseEntity>>
 
 }

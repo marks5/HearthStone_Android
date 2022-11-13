@@ -37,9 +37,30 @@ data class HearthStoneRemoteEntity(
         faction = faction ?: empty(),
         race = race ?: empty(),
         rarity = rarity ?: empty(),
-        attack = attack,
-        cost = cost,
+        attack = attack ?: 0,
+        cost = cost ?: 0,
         playerClass = playerClass ?: empty(),
-        health = health
+        health = health ?: 0
     )
 }
+
+val remoteEntity = HearthStoneRemoteEntity(
+    cardId = "VAN_CS2_168",
+    dbfId = 68395,
+    name = "Murloc Raider",
+    cardSet = "Vanilla",
+    type = "Minion",
+    faction = "Alliance",
+    rarity = "Free",
+    cost = 1,
+    attack = 2,
+    health = 1,
+    text = "Whenever a Murloc is summoned, gain +1 Attack.",
+    flavor = "Mrrraggglhlhghghlgh, mrgaaag blarrghlgaahahl mrgggg glhalhah a bghhll graggmgmg Garrosh mglhlhlh mrghlhlhl!!",
+    artist = "Dan Scott",
+    collectible = true,
+    race = "Murloc",
+    playerClass = "Neutral",
+    img = "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/e648ad01e0e00be3822c2ad8f7d62dea8d1df50b15e0212ea7da716232f99009.png",
+    locale = "enUS"
+)

@@ -6,17 +6,17 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 interface HearthStoneLocalDataSource {
-    fun insertBiomarker(vararg biomarkerDatabaseEntity: HearthStoneDatabaseEntity)
-    fun returnBiomarkersListAsFlow(): Flow<List<HearthStoneDatabaseEntity>>
+    fun insertCard(vararg hearthStoneCardDatabaseEntity: HearthStoneDatabaseEntity)
+    fun returnListAsFlow(): Flow<List<HearthStoneDatabaseEntity>>
 }
 
 @Singleton
-class RealHearthStoneLocalDataSource @Inject constructor(private val biomarkerDao: HearthStoneDao) :
+class RealHearthStoneLocalDataSource @Inject constructor(private val hearthStoneDao: HearthStoneDao) :
     HearthStoneLocalDataSource {
 
-    override fun insertBiomarker(vararg biomarkerDatabaseEntity: HearthStoneDatabaseEntity) =
-        biomarkerDao.insertBiomarker(*biomarkerDatabaseEntity)
+    override fun insertCard(vararg hearthStoneCardDatabaseEntity: HearthStoneDatabaseEntity) =
+        hearthStoneDao.insertCard(*hearthStoneCardDatabaseEntity)
 
-    override fun returnBiomarkersListAsFlow(): Flow<List<HearthStoneDatabaseEntity>> =
-        biomarkerDao.returnBiomarkersListAsFlow()
+    override fun returnListAsFlow(): Flow<List<HearthStoneDatabaseEntity>> =
+        hearthStoneDao.returnCardsListAsFlow()
 }
