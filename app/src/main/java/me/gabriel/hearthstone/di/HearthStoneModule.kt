@@ -26,13 +26,13 @@ abstract class HearthStoneModule {
 
     @Singleton
     @Binds
-    abstract fun bindBiomarkerLocalDataSourceReal(
+    abstract fun bindHearthStoneLocalDataSourceReal(
         realHearthStoneLocalDataSource: RealHearthStoneLocalDataSource
     ): HearthStoneLocalDataSource
 
     @Singleton
     @Binds
-    abstract fun bindBiomarkerRepositoryReal(
+    abstract fun bindHeathStoneRepositoryReal(
         realHearthStoneRepository: RealHearthStoneRepository
     ): HearthStoneRepository
 

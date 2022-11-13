@@ -22,11 +22,11 @@ class RealHearthStoneRepository @Inject constructor(
 ) : HearthStoneRepository {
 
     override suspend fun refreshHearthStoneList() {
-        biomarkerRemoteDataSource.returnBiomarkersList().mapNotNull { each ->
+        biomarkerRemoteDataSource.returnHearthStoneList().mapNotNull { each ->
             each.value.map {
                 it.mapperToDatabaseEntity()
             }.toTypedArray().let {
-                biomarkerLocalDataSource.insertBiomarker(*it)
+                biomarkerLocalDataSource.insertCard(*it)
             }
         }
     }
